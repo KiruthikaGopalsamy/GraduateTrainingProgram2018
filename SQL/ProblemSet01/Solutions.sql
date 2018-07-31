@@ -209,6 +209,15 @@ mysql> select name,date_from,date_to,room_no from hotel inner join booking on bo
 |        4 |
 +----------+
 11.List the names and cities of guests who began a stay in New York in August.
+ select name , city from hotel inner join booking on booking.hotel_no=hotel.hotel_no where city='NEW YORk' AND date_from like '__-AUG-99';
++--------------+----------+
+| name         | city     |
++--------------+----------+
+| EMPIRE HOTEL | NEW YORK |
+| EMPIRE HOTEL | NEW YORK |
++--------------+----------+
+2 rows in set (0.00 sec)
+
 12.List the hotel names and room numbers of any hotel rooms that have not been booked.
 select name ,room_no from hotel inner join room on room.hotel_no=hotel.hotel_no where room_no not in(select room_no from booking);
 +------------------+---------+
