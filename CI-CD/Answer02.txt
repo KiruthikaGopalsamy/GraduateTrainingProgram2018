@@ -25,7 +25,7 @@
   a. Git   
 
 7. How is system testing different from unit testing and Integration testing?
- The System testing we analyze the behavior of the whole system according to the requirement specified  in Acceptance criteria. Integration testing aims to check if the different sub functionalities or modules were integrated properly to form a bigger functionality.  
+ The System testing we analyze the behavior of the whole system according to the requirement specified  in Acceptance criteria. Integration testing aims to check if the different sub functionalities or modules were integrated properly to form a bigger functionality.Unit testing is defined by testing small pieces of code, typically individual functions, alone and isolated.   
 8. What are the some of the metrics that are measured/evaluated during a performance testing phase?
   Speed - Determines whether the application responds quickly
   Scalability - Determines maximum user load the software application can handle.
