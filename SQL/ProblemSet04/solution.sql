@@ -122,16 +122,9 @@ sqlite> select avg(cnt) from(select ID1,count(ID2) as cnt from friend group by I
 2.5
 
 13.Find the number of students who are either friends with Cassandra or are friends of friends of Cassandra. Do not count Cassandra, even though technically she is a friend of a friend.
-sqlite> select h1.name ,h2.name from Highschooler h1
-   ...>    inner join friend f1 on f1.ID1=h1.ID
-   ...>    inner join Highschooler h2 on h2.ID=f1.ID2
-   ...>      where ID1 in ( select ID2 from (select * from friend where ID1 in (select ID from Highschooler where name='Cassandra'))) and h1.name<>'Cassandra' and h2.name<>'Cassandra';
-Gabriel|Jordan
-Gabriel|Andrew
-Alexis|Tiffany
-Alexis|Jessica
-Alexis|Gabriel
+select count(*) from (select ID2 from Friend where ID1 IN (select ID2 from Friend where ID1 IN ( select ID from Highschooler where name='Cassandra')) and ID2<>(select ID from Highschooler where name='Cassandra') UNION select ID2 from Friend where ID1 IN ( select ID from Highschooler where name='Cassandra') ); 
 
+7
 
 14.Find the name and grade of the student(s) with the greatest number of friends. (1 point possible)
 
