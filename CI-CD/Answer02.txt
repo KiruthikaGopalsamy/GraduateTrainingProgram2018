@@ -1,6 +1,6 @@
 <PROBLEM SET 02> AUGUST 09,2018
  SUBMITTED BY kiruthika.gopalsamy
-   1.Why should you use a version control tool? 
+1.Why should you use a version control tool? 
   It contain previous version/history
   In version control tool we should update reqularly, it help others to understand the changes 
   It maintain history of changes.
