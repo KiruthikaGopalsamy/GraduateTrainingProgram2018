@@ -46,6 +46,18 @@ Brittany|10|Kris|10
 Austin|11|Jordan|12
 John|12|Haley|10
 
+7.For each student A who likes a student B where the two are not friends, find if they have a friend C in common (who can introduce them!). For all such trios, return the name and grade of A, B, and C. (1 point possible)
+sqlite> select h1.name,h1.grade,h2.name,h2.grade ,h3.name,h3.grade from Highschooler h1
+   ...> inner join likes l1 on l1.ID1=h1.ID
+   ...> inner join Highschooler h2 on h2.ID=l1.ID2 and l1.ID2 not in (select ID2 from Friend where ID1 = H1.ID)
+   ...> inner join friend f1 on f1.ID1=l1.ID1
+   ...> inner join friend f2 on f2.ID2=l1.ID2
+   ...> inner join Highschooler h3 on h3.ID=f1.ID2
+   ...> where  f1.ID2=f2.ID1;
+Andrew|10|Cassandra|9|Gabriel|9
+Austin|11|Jordan|12|Andrew|10
+Austin|11|Jordan|12|Kyle|12
+
 6.Find names and grades of students who only have friends in the same grade. Return the result sorted by grade, then by name within each grade. (1 point possible)
 sqlite> select h1.name,h1.grade,h2.name,h2.grade from friend
    ...> inner join Highschooler h1 on h1.ID=friend.ID1
@@ -65,19 +77,6 @@ Jessica|11|Gabriel|11
 Jordan|12|Kyle|12
 John|12|Logan|12
 
-7.For each student A who likes a student B where the two are not friends, find if they have a friend C in common (who can introduce them!). For all such trios, return the name and grade of A, B, and C. (1 point possible)
-sqlite> select h1.name,h1.grade,h2.name,h2.grade,h3.name,h3.grade from likes l1
-   ...>  inner join Highschooler h1 on h1.ID=l1.ID1
-   ...>  inner join Highschooler h2 on h2.ID=l1.ID2
-   ...> inner join friend f1 on f1.ID1=h1.ID
-   ...> inner join friend f2 on f2.ID2=h2.ID
-   ...> inner join Highschooler h3 on h3.ID= f1.ID2
-   ...>  where l1.ID1= f1.ID1 and l1.ID2<>f1.ID2  and l1.ID1<>f2.ID1 and f2.ID2=l1.ID2 and f1.ID2=f2.ID1;
-Andrew|10|Cassandra|9|Gabriel|9
-Gabriel|11|Alexis|11|Jessica|11
-Brittany|10|Kris|10|Haley|10
-Austin|11|Jordan|12|Andrew|10
-Austin|11|Jordan|12|Kyle|12
 
 8.Find the difference between the number of students in the school and the number of different first names. (1 point possible)
 sqlite> select (select count(ID) from  Highschooler) -(select count(distinct name) from Highschooler);
