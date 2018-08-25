@@ -1,0 +1,33 @@
+PROBLEM SET 01> AUGUST 13,2018
+ SUBMITTED BY kiruthika.gopalsamy
+ 
+1. What is meant by a Working copy in Version control?
+  local repository that is used by version control tool is called Working copy. Git init command is used to create a working copy of a repository.
+2. Which Git command is used to create a working copy of a repository on your machine?
+   git init
+
+3. What is the use of the GIT pull command?
+    GIT PULL fetch file from remote master branch since it diverged from the local working copy.
+4. Which GIT command is used to move an untracked change into the staging area?
+   GIT ADD
+
+
+6. What is meant by a Branch in Version control? How do you create a new branch in GIT?
+  A branch holds and points to the changes in the source code   from where it is created(master). 
+   git checkout -b <branchname>
+
+7. Which branch gets created by default when you first create a repository in GIT?
+   Master 
+
+8. Which of these facts about GIT is accurate ; 
+
+   a) GIT is a centralised  version control tool.   
+   b) Changes made to files in GIT can be reversed by reverting to an earlier version of the file.
+   d) GIT is an open-source ,distributed version control tool.
+ 
+9. What is the difference between Git and Github?
+  Git is a version control software that helps you keep track of your changes to the source code by compartmentalizing     each change as a “version” rather than storing all the changes in a central server. 
+  GitHub is a web-based hosting service for Git repositories.
+  
+10. What is meant by a repository in version control?
+   It is the central place where developers store all their work. Repository not only stores files but also the history. Repository is accessed over a network, acting as a server and version control tool acting as a client. Clients can connect to the repository, and then they can store/retrieve their changes to/from repository.
