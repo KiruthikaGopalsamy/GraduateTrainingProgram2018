@@ -1,12 +1,12 @@
 #get first name and last name from user and print your full name 
-"""
+
 a=raw_input("enter your first name")
 b=raw_input("enter your last name")
 print("Full Name : %s%s"%(a,b)) 
-"""
+
 
 #print first name and last name and age 
-"""
+
 a=raw_input("enter your full name ")
 b=raw_input("enter your age")
 x,y=a.split(" ")
@@ -15,10 +15,10 @@ print("first name:%s\n""last name:%s\n" "age:%s\n"%(x,y,b))"""
 """print(int(x[0])+int(x[-1]))
 z=int(z)
 print(z)
-"""
+
 
 #Calculating your birth number in numerology
-"""
+
 a=raw_input("enter your DOB in dd/mm/yyyy format")
 x,y,z=a.split("/")
 print("%s%s%s" %(x,y,z))
@@ -46,7 +46,7 @@ if(s>9):
    k=k+r
    s=s/10
   print("%s"%k)
-"""
+
 #Python program to perform sum of three given integers
 
 d=raw_input("enter 3 digit number")
