@@ -1,3 +1,17 @@
+"""a)Given the following dictionary:
+      inventory = {
+                   'gold' : 500,
+                   'pouch' : ['flint', 'twine', 'gemstone'],
+                   'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+                }
+       Try to do the followings:
+       i)Add a key to inventory called 'pocket'.
+       ii)Set the value of 'pocket' to be a list consisting of the strings 'seashell', 'strange berry', and 'lint'.
+       iii).sort()the items in the list stored under the 'backpack' key.
+       iv)Then .remove('dagger') from the list of items stored under the 'backpack' key.
+       v)Add 50 to the number stored under the 'gold' key."""
+
+
 def sort_backpack():
     inventory['backpack'].sort()
     print("sorted list%s"%inventory['backpack'])
@@ -24,7 +38,7 @@ add_element()
 #create a student details dictionary having {'student1':[marks1,marks2, marks3],'student2':[marks1,marks2,marks3]}
       #i)Create the dictionary as mentioned above
        #ii) need to perform total and average of the marks for each student
-"""
+
 def sum_stu():
    sum_s={}
    for k,v in student_details.iteritems():
