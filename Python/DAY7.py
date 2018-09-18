@@ -1,3 +1,9 @@
+<PROBLEM SET 07> SEPTEMBER 09,2018
+ SUBMITTED BY kiruthika.gopalsamy
+
+
+
+
 """•Write a Script where establish a connection to db •Write a DDL to create a table (columns: Name, Rollno, Subject1, Subject2, Subject3)
 •insert 5 rows with values
 •Do a count() the table
