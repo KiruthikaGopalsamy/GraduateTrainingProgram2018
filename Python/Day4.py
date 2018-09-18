@@ -1,3 +1,7 @@
+<PROBLEM SET 04> SEPTEMBER 05,2018
+ SUBMITTED BY kiruthika.gopalsamy
+
+
 """You are asked to ensure that the first and last names of people begin with a capital letter in their passports. For example, alison heck should be capitalised correctly as Alison Heck.
 
 alison heck => Alison Heck
@@ -43,9 +47,6 @@ Constraints:-
 
 
 """
-
-
-
 def sum_stu():
    sum_s={}
    for k,v in student_details.iteritems():
@@ -95,4 +96,3 @@ for i in range(int(n)):
   except Exception as error:
      print error
   
- """
