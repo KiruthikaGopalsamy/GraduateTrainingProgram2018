@@ -1,10 +1,10 @@
+<PROBLEM SET 01> SEPTEMBER 11,2018
+ SUBMITTED BY kiruthika.gopalsamy
+
 """Create a program which accept the ‘directory path’ and will have the following functions in it –
 1.A function to list down all the files in current and subdirectories of the given path.
 2.A function to count the number of files and number of unique files in current and subdirectories.
 3.A function to count the number of “.txt” files in current directory as well as the subdirectories."""
-
-
-
 
 import os
 path=raw_input("enter path:")
