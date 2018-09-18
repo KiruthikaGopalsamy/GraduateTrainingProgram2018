@@ -1,11 +1,11 @@
 #get first name and last name from user and print your full name 
-"""
+
 a=raw_input("enter your first name")
 b=raw_input("enter your last name")
 print("Full Name : %s%s"%(a,b))  
-"""
+
 # get ur full name, age as input from user and print first name and last name , age using string slicing
-"""
+
 a=raw_input("enter your full name ")
 b=raw_input("enter your age")
 x,y=a.split(" ")
@@ -16,9 +16,9 @@ if(b>=18):
  print("eligible to vote")
 else:
  print("not eligible to vote")
-"""
+
 #Python program to check whether a year is leap year or not
-"""
+
 a=raw_input("enter year")
 a=int(a)
 if(a%4==0):
@@ -33,9 +33,9 @@ else:
    print("non leap year")     
 
 
-"""
+
 #program that accepts a sentence and calculate the number of upper case letters and lower case letters
-"""
+
 s=raw_input("enter year")
 upper=0
 lower=0
@@ -47,11 +47,9 @@ for i in s:
 print("No. of upper case %s"%upper)
 print("No. of lower case%s"%lower)
 
-"""
+
 #perform sum of  even numbers
 
-
-"""
 a=[1,2,3,4,5,6,7,8]
 sum=0
 for i in a:
@@ -59,19 +57,8 @@ for i in a:
       sum=sum+i
 print("sum=%s"%sum)
 
-"""
-"""
-a=raw_input("enter number")
-x=[]
-x=a.split(',')
-z=tuple(x)
-print(x)
-print(z) 
-"""
-
-
 #program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple
-"""
+
 a=str(raw_input("enter number")) 
 x=[]
 x=a.split(',')
@@ -80,4 +67,4 @@ print(x)
 print(z) 
 
 
-"""
+
